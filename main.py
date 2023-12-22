@@ -28,10 +28,15 @@ schedule = {doctor_1:['dd/mm:8-9', 'dd/mm:9-10', 'dd/mm:10:15-11:15','dd/mm:11:1
                               doctor_3:['dd/mm:8-9', 'dd/mm:9-10', 'dd/mm:10:15-11:15','dd/mm:11:15-12'],
                               }
 
+def main():
+    booking_1 = appointment.bookAppo()
+    cancel_1 = appointment.cancelAppo(booking_1)
 
 
+if __name__ == "__main__":
+    main()
 
-booking_1 = appointment.bookAppo()
+
 
 
 

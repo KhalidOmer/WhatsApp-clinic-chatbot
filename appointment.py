@@ -5,7 +5,7 @@ Created on Tue Dec 19 13:00:42 2023
 """
 import itertools
 class Appointment:
-    newid  = itertools.count().next
+    
     def __init__(self, workingSchedule, doctors):
         self.workingSchedule = workingSchedule
         self.doctors = doctors # list of doctor from doctor class
@@ -15,7 +15,6 @@ class Appointment:
                               }
         self.appoList = {}
         
-        self.id = Appointment.newid()
     def getWorkingSchedule(self):
         return self.workingSchedule
 
@@ -38,7 +37,8 @@ class Appointment:
         return appoTime, chosenDoctor
         
 
-    def bookAppo(self, id):
+    def bookAppo(self):
+        newid  = itertools.count().next
         appoTime, doctorName = self.takeAppo()
         statement1 = 'Your appointment is at : '+ str(appoTime)+ 'with' + doctorName
         statement2 = 'Your numberId is: '+ str(id)

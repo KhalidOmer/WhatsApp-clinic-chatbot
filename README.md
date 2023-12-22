@@ -11,6 +11,8 @@ Scalable and Reliable: Ensure 24/7 availability and reliability, capable of hand
 # Programming languages:
 Python 
 
+#General description of the Repo.
+It is composed of serval files, each file servers as a module for the main.py file, in which the program is executed and tested. 
 # Contributers:
 1 - Khalid Hassan 
 2 - Sediqe Mohammedi
